@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+:root {
+    --color-text: #ffffffc5;
+    --color-tela: #ffffffe0;
+    --color-calc: #ffffff54;
+}
+
+#calculadora {
+    background-color: #252525;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    height: 100vh;
+    gap: 0;
+}
+
+#tela {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    height: 30vh;
+    width: 85vw;
+    color: var(--color-tela);
+    font-size: 4.5rem;
+    text-align: end;
+}
+
+#tela p {
+    width: 100%;
+    padding: 5px 15px;
+}
+
+#tela .space {
+    height: 20%;
+}
+
+#calc {
+    font-size: 1.2rem;
+    color: var(--color-calc);
+}
+
+#teclado {
+    display: grid;
+    height: 70vh;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    gap: 2px;
+}
+
+.teclas {
+    background-color: #575555b4;
+    border: none;
+    font-size: 2rem;
+    color: var(--color-text);
+    border-radius: 5px;
+}
+
+.teclas:hover {
+    background-color: #696565c2;
+}
+
+#historico {
+    /* background-color: rgba(0, 0, 0, 0.11); */
+    height: 100vh;
+    width: 15%;
+}
