@@ -2,16 +2,17 @@
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>Calculadora Simples</title>
     <link rel="shortcut icon" href="/icon/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="style.css">
   </head>
   <body id="calculadora">
     <div id="tela">
-        <p id="calc">sqr( )</p>
-        <p id="saida">0</p>
-        <div class="space"></div>
+        <p id="calc"></p>
+        <div class="space">
+          <p id="saida">0</p>
+        </div>
     </div>
     <div id="teclado">
         <button id="botao-percent" class="teclas botao-percent">%</button>
@@ -25,7 +26,7 @@
         <button id="botao-7" class="teclas">7</button>
         <button id="botao-8" class="teclas">8</button>
         <button id="botao-9" class="teclas">9</button>
-        <button id="botao-multi" class="teclas">X</button>
+        <button id="botao-times" class="teclas">X</button>
         <button id="botao-4" class="teclas">4</button>
         <button id="botao-5" class="teclas">5</button>
         <button id="botao-6" class="teclas">6</button>
@@ -37,7 +38,7 @@
         <button id="botao-invert" class="teclas">+/-</button>
         <button id="botao-0" class="teclas">0</button>
         <button id="botao-comma" class="teclas">,</button>
-        <button id="botao-result" class="teclas">=</button>
+        <button id="botao-equal" class="teclas">=</button>
     </div>
     <aside id="historico"></aside>
     <script src="app.js"></script>
