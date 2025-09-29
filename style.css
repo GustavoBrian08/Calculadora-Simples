@@ -1,14 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
 }
 
 :root {
     --color-text: #ffffffc5;
     --color-tela: #ffffffe0;
     --color-calc: #ffffff54;
+    --bg-teclas: #575555b4;
+    --bg-teclas-funcoes: #424242b4;
 }
 
 #calculadora {
@@ -30,6 +35,7 @@
     width: 85vw;
     color: var(--color-tela);
     font-size: 3.5rem;
+    font-weight: 600;
     text-align: end;
     user-select: text;
 }
@@ -57,19 +63,49 @@
     display: grid;
     height: 70vh;
     grid-template-columns: repeat(4, 1fr);
-    gap: 2px;
+    gap: 3px;
+    padding: 3px;
 }
 
 .teclas {
     background-color: #575555b4;
     border: none;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: var(--color-text);
     border-radius: 5px;
 }
 
 .teclas:hover {
-    background-color: #696565c2;
+    background-color: var(--bg-teclas-funcoes);
+}
+
+.teclas:active {
+    background-color: #333333bd;
+}
+
+.teclas-funcoes {
+    background-color: var(--bg-teclas-funcoes);
+    font-weight: 500;
+}
+
+.teclas-funcoes:hover {
+    background-color: var(--bg-teclas);
+}
+
+.teclas-funcoes:active {
+    background-color: var(--bg-teclas-funcoes);
+}
+
+#botao-equal {
+    background-color: rgba(220, 20, 60, 0.753);
+}
+
+#botao-equal:hover {
+    background-color: rgba(156, 24, 50, 0.753);
+}
+
+#botao-equal:active {
+    background-color: rgba(134, 25, 47, 0.753);
 }
 
 #historico {
